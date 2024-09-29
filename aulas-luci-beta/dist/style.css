@@ -1,0 +1,73 @@
+/* definfindo variaveis */
+:root {
+  --cor-txt-prenav-nav: white;
+  --cor-back-prenav-nav: purple;
+  --padd-txt-mobile: 0.5rem;
+  --padd-txt-desk: 1rem;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto;
+  background-color: lightgray;
+}
+.prenavbar {
+  color: var(--cor-txt-prenav-nav);
+  background-color: var(--cor-back-prenav-nav);
+}
+.navbar {
+  background-color: var(--cor-back-prenav-nav);
+  display: flex;
+  color: white;
+  width: 100%;
+  height: 2.5rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.navbar a {
+  flex: auto;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+  flex: auto;
+}
+.pagina {
+  margin-top: 3rem;
+  background-color: white;
+  z-index: 1;
+  border-radius: 1rem;
+}
+@media (max-width: 425px) {
+  .pagina {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+  .pagina p {
+    padding: var(--padd-txt-mobile);
+  }
+  .pagina h1 {
+    padding: var(--padd-txt-mobile);
+  }
+}
+@media (min-width: 426px) {
+  .pagina {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 425px;
+    max-width: 600px;
+  }
+  .pagina p {
+    padding: var(--padd-txt-desk);
+  }
+  .pagina h1 {
+    padding: var(--padd-txt-desk);
+  }
+}
+
+header {
+  margin-left: auto;
+  margin-right: auto;
+}
